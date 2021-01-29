@@ -9,7 +9,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+  run: java server.jar
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -28,9 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-      #Run a Server
-      - name: server
-        run: java server.jar
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
